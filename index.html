@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Priyanshi Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Priyanshi</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+			  <li class="nav-item"><a href="#ongoing_certifications-section" class="nav-link"><span>Ongoing Certifications</span></a></li>
+
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+			  <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
+			  <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#achievements-section" class="nav-link"><span>Achievements</span></a></li>
+			  <li class="nav-item"><a href="#research-section" class="nav-link"><span>Research/Membership</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/PIC1.jpg);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Priyanshi</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Web Developer ',
+						'Data Analyst  ',
+						'Programming Enthusiastic   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Pursuing Bachelor of Technology in Artificial Intelligence and Data Science </h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/priyanshi-sharma-6943a4235/" class="btn btn-primary py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/prisha1505" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/PIC1.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Priyanshi</span></p>
+										<p><span class="title-s">Education: </span> <span>B.Tech</span></p>
+										<p><span class="title-s">Specialization: </span> <span>AI & DS</span></p>
+										<p><span class="title-s">Address: </span> <span>Jaipur, Rajasthan, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<!-- <div class="skill-mf"> 
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">	85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p> Passionate about leveraging cutting-edge technologies to extract actionable insights from data and develop intelligent solutions to complex problems.
+									Enthusiastic about diving into the depths of object-oriented programming and Data Structure & algorithms. 
+									Proficient in programming languages such as C++, Java, Python and R. 
+									Proficient in network protocols and socket programming, I enjoy crafting robust client-server applications and distributed systems that facilitate seamless data exchange over networks.
+									Strong understanding of machine learning algorithms and techniques.
+									Competent in statistical analysis and hypothesis testing. Proficient in database management systems like SQL. Ability to work with large datasets and perform data preprocessing.
+									Familiarity with deep learning frameworks like TensorFlow and PyTorch
+
+
+									
+								</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Programming:</span> <span>C++, Python, R, Java, MATLAB</span></li>
+									<li class="d-flex"><span>Tools & Library:</span> <span>TensorFlow, OpenCV, Keras, TCP/IP, Jupyter Notebook, Google Colab,
+										GUI, NumPy,Scikit-learn, SciPy, Seaborn, PyTorch, CI/CD, Xampp.
+										</span></li>
+									<li class="d-flex"><span>OS:</span> <span>Linux/Unix, Windows</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Web Skills:</span> <span>HTML, CSS, JS, MySQL, PHP
+									</span></li> 
+									<li class="d-flex"><span>Other Skills:</span> <span>Google Cloud, Excel, Git, Data Analytics, UX/UI Designer </span></li>
+									<li class="d-flex"><span>Key Courses Taken: </span> <span>Problem Solving, Data Structure & Algorithms, Object-Oriented Programming, DBMS, Machine Learning, Data Mining, Operating System, Network Programming, Image Processing, Generative AI, Natural Language Processing, Deep Learning, Information Security System, Cloud Computing</span></li>
+									
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<!-- <div class="counter-wrap ftco-animate d-flex mt-md-3"> -->
+							<div class="text">
+								<!-- <p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p> -->
+								<p><a href="https://leetcode.com/prisha1505/" class="btn btn-primary py-3 px-3">LeetCode Profile</a></p>
+								<p><a href="https://auth.geeksforgeeks.org/user/sharmamonik98xw" class="btn btn-primary py-3 px-3">GeeksforGeeks Profile</a></p>
+								<p><a href="https://www.cloudskillsboost.google/public_profiles/1c901015-09b5-4c81-b78f-b0c7f6572a75" class="btn btn-primary py-3 px-3">Google cloud Skill Boost Profile</a></p>
+								<p><a href="https://learn.microsoft.com/en-us/users/prisha1505/" class="btn btn-primary py-3 px-3">Microsoft Learner Profile</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+	<section class="ftco-section ftco-no-pb" id="ongoing_certifications-section">
+    	<!-- <div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div> -->
+
+		<div class="row">
+			<h1 class="big-4">Ongoing Certifications</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+
+			
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">19 Feb - 23 Feb 2024</span>
+					<h2>Geospatial Analysis using Google Earth Engine </h2>
+					<span class="position">IIRS Outreach Programme</span>
+					<p class="mt-4"><a href="https://drive.google.com/drive/folders/1gMwIvSSfSapQOlTbuQm6QTgSsvh0m1Al?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Certificate(After Completion of Course)</a></p>
+					<p class="mt-4"> Course Layout -
+						<ul>
+							<li>Basics of Geospatial Analytics and introduction of GEE interface</li>
+							<li>Visualization in GEE: Understanding spectral band combination and plotting spectral response curves.</li>
+							<li>Spectral Indices in GEE: Generating Spectral Indices for extracting various Land Features e.g. vegetation, waterbody etc. </li>
+							<li>Image Classification: Machine learning and other techniques for land feature classification</li>
+							<li>Data uploading and downloading in GEE for specific area of interest based analysis</li>
+							
+					</p>
+				</div>
+
+			</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">22 Jan - 12 Apr 2024</span>
+						<h2>Data Analytics with Python</h2>
+						<span class="position">(NPTEL)</span>
+						<p class="mt-4"><a href="https://drive.google.com/drive/folders/1gMwIvSSfSapQOlTbuQm6QTgSsvh0m1Al?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Certificate(After Completion of Course)</a></p>
+						<p class="mt-4"> Course Layout -
+							<ul>
+								<li>Introduction to data analytics, probability and Python fundamentals</li>
+								<li>Sampling and sampling distributions, Hypothesis testing, Two sample testing and introduction to ANOVA, Two way ANOVA and linear regression</li>
+								<li>Linear regression and multiple regression, Concepts of MLE and Logistic regression, ROC and Regression Analysis Model Building</li>
+								<li>c2 Test and introduction to cluster analysis, Clustering analysis, Classification and Regression Trees (CART)</li>
+								
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Feb - Mar 2024</span>
+						<h2>Custom Models, Layers, and Loss Functions with TensorFlow</h2>
+						<span class="position">(Coursera)</span>
+						<p class="mt-4"><a href="https://drive.google.com/drive/folders/1gMwIvSSfSapQOlTbuQm6QTgSsvh0m1Al?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Certificate(After Completion of Course)</a></p>
+						<p class="mt-4"> About this Course 
+							<ul>
+								<li>Compare Functional and Sequential APIs, discover new models you can build with the Functional API, and build a model that produces multiple outputs including a Siamese network.</li>
+								<li>Build custom loss functions (including the contrastive loss function used in a Siamese network) in order to measure how well a model is doing and help your neural network learn from training data. </li>
+								<li>Build off of existing standard layers to create custom layers for your models, customize a network layer with a lambda layer, understand the differences between them, learn what makes up a custom layer, and explore activation functions. </li>
+								<li>Build off of existing models to add custom functionality, learn how to define your own custom class instead of using the Functional or Sequential APIs, build models that can be inherited from the TensorFlow Model class, and build a residual network (ResNet) through defining a custom model class. </li>
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Feb - Mar 2024</span>
+						<h2>Google IT Automation with Python Professional Certificate</h2>
+						<span class="position">(Coursera)</span>
+						<p class="mt-4"><a href="https://drive.google.com/drive/folders/1gMwIvSSfSapQOlTbuQm6QTgSsvh0m1Al?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Certificate(After Completion of Course)</a></p>
+						<p class="mt-4"> About this Course 
+							<ul>
+								<li>This beginner-level, six-course certificate, developed by Google, is designed to provide IT professionals with in-demand skills -- including Python, Git, and IT automation</li>
+								<li>Setup, configure, and use your own developer environment in Python, Manipulate files and processes running on the Operating System using Python, Understand and use regular expressions (regex), a powerful tool for processing text files, Understand and use regular expressions (regex), a powerful tool for processing text files, Know when to choose Bash or Python, and create small scripts using Bash</li>
+								<li>Analyze real-world IT problems and implement the appropriate strategies to solve those problems, Demonstrate techniques to quickly find and solve the root cause of problems in IT infrastructure, Understand the root cause for problems related to speed, crashes, or exhausted resources in computer,Identify the most common pitfalls of code and how to fix them  </li>
+								<li>Understand the benefits of configuration management and infrastructure as code, Create and maintain containers with Docker and Kubernetes to create efficient and safe application deployment, Automatically deploy new virtual machines running in the Cloud, Deploy changes in a safe manner following CICD principles</li>
+								<li>Use Python external libraries to create and modify documents, images, and messages, Understand and use Application Programming Interfaces (APIs) to interact with web services, Understand and use data serialization to send messages between running programs, Build a solution using the skills I have learned</li>
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Mar - Apr 2024</span>
+						<h2>Google UX Design Professional Certificate</h2>
+						<span class="position">(Coursera)</span>
+						<p class="mt-4"><a href="https://drive.google.com/drive/folders/1gMwIvSSfSapQOlTbuQm6QTgSsvh0m1Al?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Certificate(After Completion of Course)</a></p>
+						<p class="mt-4"> About this Course 
+							<ul>
+								<li>User experience (UX) designers focus on the experience that users have while using products like websites, apps, and physical objects.</li>
+								<li>Identify common job responsibilities of entry-level UX designers and other teams you might work with, Understand foundational concepts in UX design, such as user-centered design, the design process, accessibility, and equity-focused design, Explain why design sprints are an important and useful part of a UX designer’s work. </li>
+								<li>Empathize with users to understand their needs and pain points, Develop problem statements to define user needs, Generate ideas for possible solutions to user problems.</li>
+								<li>Create storyboards to come up with ideas about solutions to user needs, Create wireframes on paper and digitally in the design tool Figma, Build paper prototypes to create interactive designs, Design low-fidelity prototypes in Figma.</li>
+								<li>Plan and conduct moderated and unmoderated usability studies, Synthesize observations from usability studies and come up with insights, Share research methodology and insights using persuasive presentation skills, Modify low-fidelity designs based on research insights.</li>
+								<li>Build mockups and high-fidelity prototypes in the design tool Figma, Define and apply common visual design elements and principles, Demonstrate how design systems can be used to organize, standardize, and enhance designs, Understand the role of design critique sessions and feedback while iterating on designs, Apply each step of the UX design thinking framework (empathize, define, ideate, prototype, test) to create a dynamic website, Plan information architecture and sitemaps for website designs, Apply common layouts for web pages, Complete a design project and include it in your professional UX portfolio.</li>
+								<li>Apply each step of the UX design thinking framework (empathize, define, ideate, prototype, test) to create a  project focused on social good, Build wireframes, mockups, and low-fidelity and high-fidelity prototypes for a dedicated mobile app and a responsive website, </li>
+						</p>
+					</div>
+	
+				</div>
+			</div>
+
+	
+    <section class="ftco-section ftco-no-pb" id="experience-section">
+    	<!-- <div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div> -->
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July-Sept 2024</span>
+						<h2>Data Sciene Intern</h2>
+						<span class="position">at Learn and Build, jaipur, Rajasthan</span>
+						<p class="mt-4">Two months of immersive learning in the realms of Data Science with AI and ML- a journey of exploration, learning, and hands-on experience. 
+							<a href="https://drive.google.com/file/d/1Qc_CWirvs9Y1sdb2Myrz1o6-gI3FkRRr/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							<ul>
+								
+								<li>Contributed to data gathering efforts by identifying relevant sources and employing techniques such as web scraping and API integration. Also involved in data preprocessing tasks like cleaning, normalization, and handling missing values.</li>
+								<li>Assisted in performing statistical analysis on datasets to derive meaningful insights and identify patterns, utilizing tools like Python's NumPy and Pandas libraries.</li>
+								<li> Collaborated with senior team members to develop ML models for various predictive analytics tasks. Implemented algorithms such as regression, classification, and clustering using libraries like scikit-learn.</li>
+								<li>Gained exposure to deep learning concepts and frameworks such as TensorFlow or PyTorch, experimenting with neural network architectures for tasks like image recognition or natural language processing (NLP).</li>
+								<li>Contributed to feature engineering processes by identifying and creating relevant features from raw data, aiming to improve model performance and robustness.</li>
+								<li>Assisted in creating informative visualizations using libraries like Matplotlib and Seaborn, effectively communicating insights and trends derived from data analysis and model outputs.</li>
+								<li>Actively participated in group projects, working alongside peers to solve real-world problems leveraging AI & ML techniques. Demonstrated strong teamwork and communication skills throughout the project lifecycle.</li>
+								<li>Concluded the internship with a reflective session, highlighting key learnings, achievements, and areas for further growth. Expressed gratitude for the valuable experience gained and the opportunity to contribute to cutting-edge projects in the field of AI & ML.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July-Aug 2022</span>
+						<h2>Front-End Web Development</h2>
+						<span class="position">At Matrix Computers(A unit of Aryan Informatrix PVT. LTD. , Jaipur, Rajasthan</span>
+						<p class="mt-4">Received comprehensive training on the fundamentals of front-end web development, including HTML and CSS. <br>
+							<a href="https://drive.google.com/file/d/1lYn31G0XHgKctkidFIQqbSn9bgVu02Mo/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							<ul>
+								<li>Learned to structure web pages using HTML, understanding the importance of semantic markup for accessibility and SEO optimization.</li>
+								<li>Explored various CSS properties and selectors to apply styles, including layout techniques such as Flexbox and Grid for responsive design.</li>
+								<li>Delved into the basics of JavaScript programming, including variables, data types, functions, and control flow structures.</li>
+								<li> Introduced to popular front-end frameworks and libraries such as Bootstrap, jQuery, and React, understanding their role in simplifying development tasks and enhancing user experiences.</li>
+								<li>Explored strategies for optimizing web page performance, including minimizing file sizes, optimizing images, and asynchronous loading of resources.</li>
+								<li>Expressed gratitude for the opportunity to gain practical experience and build a strong foundation in front-end web development within a short timeframe.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+		<section class="ftco-section ftco-no-pb" id="education1-section">
+			<!-- <div class="container">
+				<div class="row justify-content-center pb-5">
+			  <div class="col-md-10 heading-section text-center ftco-animate">
+				  <h1 class="big big-2">Resume</h1>
+				<h2 class="mb-4">Resume</h2>
+				<p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+			  </div>
+			</div> -->
+
+			
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2025</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">Poornima Institute of Engineering and Technology, Jaipur, Rajasthan (Rajasthan Technical University)</span>
+    					<p class="mt-4">Specialization: Artificial Intelligence & Data Science</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2020</span>
+    					<h2>Senior Secondary Education</h2>
+    					<span class="position">A.K.M. Senior Secondary School, Bharatpur, Rajasthan (RBSE Board)</span>
+    					<p class="mt-4">Percentage : 92.40%</p>
+    				</div>
+				</div>
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2018</span>
+    					<h2>Secondary Education</h2>
+    					<span class="position">A.K.M. Senior Secondary School, Bharatpur, Rajasthan (RBSE Board)</span>
+    					<p class="mt-4">Percentage : 84.67%</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/drive/folders/1xlQ4zrKlh7B0FxqyqdUUwVRbBiUWdnXr" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   	<section class="ftco-section ftco-no-pb" id="certifications-section">
+    	<!-- <div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Seasoned Senior Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in data science, statistical analysis, machine learning algorithms and project management.</p>
+          </div>
+        </div> -->
+
+		<div class="row">
+			<h1 class="big-4">Certifications</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Jan 2024</span>
+					<h2>Microsoft AI Skills Challenge</h2>
+					<span class="position">Microsoft</span>
+					<p class="mt-4"><a href="https://drive.google.com/file/d/1St3Ea_lox_zbupA33lIVCbyCb8WaMAVb/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+						
+					</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Dec 2023</span>
+					<h2>completion of the Microsoft Learn Cloud Skills Challenge on Azure AI Fundamentals.</h2>
+					<span class="position">Microsoft</span>
+					<p class="mt-4"><a href="https://drive.google.com/file/d/1jNGH9vd-ruiqGIVkyA51zbpsigwTkTTT/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+						
+					</p>
+				</div>
+
+			</div>
+
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">3rd-4th Nov 2023</span>
+					<h2>SPHINX-23</h2>
+					<span class="position">At MNIT Jaipur(Offline)</span>
+					<p class="mt-4"><a href="https://drive.google.com/file/d/1gf_zUSCQK7cYc2f6zv7ghk3zAlZSC4IU/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+						
+					</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">25th-29th Sept. 2023</span>
+					<h2>Karyashala (One-week High-End Workshop)</h2>
+					<span class="position">At NIT Rourkela(Offline)</span>
+					<p class="mt-4"><a href="https://drive.google.com/file/d/1bZXcDYeCDupf812hXtxVF041ftrzrlTG/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+						
+					</p>
+				</div>
+
+			</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">16th-22nd August 2023</span>
+						<h2>STUTI-21(One-Week Training Program)</h2>
+						<span class="position">at NIT Warangal(Offline)</span>
+						<p class="mt-4"><a href="https://drive.google.com/file/d/1qdjHN3tSndF7-LUwo3QyT8aKgxGDW-Zy/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							
+						</p>
+					</div>
+
+				</div>
+
+				
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">10 Aug 2023</span>
+						<h2>Cybersecurity Essentials (LFC108)</h2>
+						<span class="position">The Linux Foundation</span>
+						<p class="mt-4"><a href="https://drive.google.com/file/d/1wNTbTSyXi2EGPGPh6N0YVIiqYnc-CDwr/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							
+						</p>
+					</div>
+
+				</div>
+
+
+				
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">17-18 Jul 2023</span>
+						<h2>Geoprocession using Python</h2>
+						<span class="position"> By Indian Institute of Remote Sensing (IIRS)</span>
+						<p class="mt-4"><a href="https://drive.google.com/file/d/1nheUjGH3aPG9JIdoM9cYU47qMLJZtaob/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							
+						</p>
+					</div>
+
+				</div>
+
+				
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June 2023</span>
+						<h2>Digital Skills: Artificial Intelligene</h2>
+						<span class="position">Accenture</span>
+						<p class="mt-4"><a href="https://drive.google.com/file/d/1IQUd51fA5mqRWJigz8CKKM6aN4dRDrEk/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							
+						</p>
+					</div>
+
+				</div>
+
+
+				
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2023</span>
+						<h2>Database Management System</h2>
+						<span class="position">By Great Learning</span>
+						<p class="mt-4"><a href="https://drive.google.com/file/d/1l8FMgVAN7oG0rfzNdfPxcJdymwthfKoa/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">14 Aug 2022</span>
+						<h2>The Fundamentals of Digital Marketing</h2>
+						<span class="position">Google Digital Garage</span>
+						<p class="mt-4"><a href="https://drive.google.com/file/d/1yHkCkW648wde2LpFdoHHZZXHBd1NgpPU/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							
+						</p>
+					</div>
+
+				</div>
+
+				
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">7th-14th feb 2022</span>
+						<h2>Codathon-2022</h2>
+						<span class="position">MANIT Bhopal(Online)</span>
+						<p class="mt-4"><a href="https://drive.google.com/file/d/1JcHT8FuAwNzd8g_p3Y7W-xrFcXcHsn32/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here for Certificate</a></p>
+							
+						</p>
+					</div>
+
+				</div>
+
+				
+
+				
+				
+
+
+				<div class="row justify-content-center mt-5">
+					<div class="col-md-6 text-center ftco-animate">
+						<p><a href="https://drive.google.com/drive/folders/1qxvr_gYoS1m0iToS1vlSpOFSigZxEn8G?usp=drive_link" class="btn btn-primary py-4 px-5">More Certifications</a></p>
+					</div>
+				</div>
+
+				
+			</div>
+
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the Projects on Python, Java, HTML, CSS, JS, PHP, MySQL & ML</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/prisha1505/Person_Recognition_using_MATLAB" class="block-20 zoom-effect" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTkeg71rY2dblutBF-pFZMGVT4kIqSJBTlA&usqp=CAU');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/prisha1505/Person_Recognition_using_MATLAB">Person Recognition using MATLAB</a></h3>
+                <p>The project aims to develop a robust system for identifying individuals based on various characteristics, leveraging the power of MATLAB.</p>
+				<ul>
+					<li></li>
+				</ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/prisha1505/Building_CNN_for_handwritten_digits-Image_Classification" class="block-20 zoom-effect" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrZ2XT_JDZ_MY0tc3M8OJx2HoUVq0q13snVw&usqp=CAU');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/prisha1505/Building_CNN_for_handwritten_digits-Image_Classification">Build CNN for handwritten digits & Image Classification </a></h3>
+                <p>The project aims to develop a Convolutional Neural Network (CNN) for accurately classifying handwritten digits and performing image classification tasks.
+					
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/prisha1505/Bus_reservation_system_using_java" class="block-20 zoom-effect" style="background-image: url('https://cdn.phpjabbers.com/files/products/features/vevs-builder-bus-websites.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/prisha1505/Bus_reservation_system_using_java">Bus Reservation System using Java</a></h3>
+                <p>The project aims to develop a comprehensive software solution for managing bus ticket reservations efficiently. Built using Java Swing for the graphical user interface (GUI) and JDBC for database connectivity, this system provides a user-friendly interface for passengers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/prisha1505/College-transport-Management-System" class="block-20 zoom-effect" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXRG0vfN72etjjIi5WZqynao1ZVbIh46rXw&usqp=CAU');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/prisha1505/College-transport-Management-System">DBMS based College Transport Management System</a></h3>
+				  <p> Developed using HTML, CSS, PHP, and MySQL, the system offers a user-friendly interface for accessing transportation-related information, making reservations, and administering the transport services effectively. The DBMS-based College Transport Management System is a web application designed to streamline the management of transportation services within a college or university campus.</p>
+				</div>
+			  </div>
+			</div>
+			
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pb" id="achievements-section">
+    	
+
+		<div class="row">
+			<h1 class="big-4">Achievements</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date"> Dec 2022</span>
+					<h2>Awarded a Scooty under "Kalibai Bheel Medhavi Chhatra Scooty Yojna"</h2>
+					<span class="position">by Rajasthan Goverment</span>
+					<p class="mt-4">
+						
+					</p>
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date"> 2018, 2020</span>
+					<h2>Awarded a "Gargi Puraskar" by "Balika Siksha Foundation"</h2>
+					<span class="position">Rajasthan Goverment</span>
+					<p class="mt-4">
+						
+					</p>
+				</div>
+
+			</div>
+		</div>
+	
+		<section class="ftco-section ftco-no-pb" id="research-section">
+    	
+
+			<div class="row">
+				<h1 class="big-4">Research & Membership</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> June 2022</span>
+						<h2>International Conference of Smart Innovation for Society</h2>
+						<span class="position">(ICSIS-2022)</span>
+						<p class="mt-4">Published Research Paper on "MANIPULATION AND MANUFACTURE OF MATERIAL WITH NANOTECHNOLOGY"
+							<li><a href="https://drive.google.com/file/d/1hYs2sgvFslcr7ABbnJyIknbrvkMis1UE/view?usp=drive_link" class="btn btn-white btn-outline-white py-3 px-4">Click Here</a></p></li>
+						</p>
+					</div>
+	
+				</div>
+	
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> 2022-2026</span>
+						<h2>Member of Indian Society for Technical Education</h2>
+						<span class="position"></span>
+						<p class="mt-4"> <a href="https://drive.google.com/file/d/1aK0qt0EBWoJ-q9075Ua7AWRilkDmMJgm/view?usp=sharing" class="btn btn-white btn-outline-white py-3 px-4">Click Here</a></p>
+							
+						</p>
+					</div>
+	
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> Joined 2024</span>
+						<h2>Member of Google Cloud Innovators Program</h2>
+						<span class="position"></span>
+						<p class="mt-4"> <a href="https://developers.google.com/profile/badges/community/innovators/cloud/2021_member" class="btn btn-white btn-outline-white py-3 px-4">Click Here</a></p>
+							
+						</p>
+					</div>
+	
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date"> Joined 2024</span>
+						<h2>Member of Google's Women Techmakers</h2>
+						<span class="position"></span>
+						<p class="mt-4"> <a href="https://developers.google.com/profile/badges/community/wtm/member" class="btn btn-white btn-outline-white py-3 px-4">Click Here</a></p>
+							
+						</p>
+					</div>
+	
+				</div>
+			</div>
+		
+	  
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Jaipur, Rajasthan, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://7455948427">+91 7455948427</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:sharmamonikasharma575@gmail.com">sharmamonikasharma575@gmail.com</a></p>
+	          </div>
+          </div>
+          
+
+		  <div class="container">
+			
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/priyanshi-sharma-6943a4235/"><span class="icon-linkedin"></span></a></li>  
+					  
+					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100027591301379&mibextid=ZbWKwL"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/_prisha_1505?igsh=MWR6MW92Zjg3b2owYQ=="><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
